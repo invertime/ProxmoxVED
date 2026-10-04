@@ -1,0 +1,34 @@
+{
+  "name": "Chaptarr",
+  "slug": "chaptarr",
+  "categories": [14],
+  "date_created": "2026-10-04",
+  "type": "ct",
+  "updateable": true,
+  "privileged": false,
+  "interface_port": 8789,
+  "documentation": "https://github.com/Chaptarr/chaptarr",
+  "website": "https://github.com/Chaptarr/chaptarr",
+  "repository": "https://github.com/Chaptarr/chaptarr",
+  "architectures": ["amd64"],
+  "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/webp/chaptarr.webp",
+  "description": "Chaptarr is a Readarr fork built for managing audiobook and eBook collections in a single instance.",
+  "install_methods": [
+    {
+      "type": "default",
+      "script": "ct/chaptarr.sh",
+      "resources": {
+        "cpu": 2,
+        "ram": 2048,
+        "hdd": 8,
+        "os": "Debian",
+        "version": "13"
+      }
+    }
+  ],
+  "default_credentials": {
+    "username": null,
+    "password": null
+  },
+  "notes": []
+}
