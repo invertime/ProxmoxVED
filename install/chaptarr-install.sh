@@ -47,14 +47,14 @@ msg_ok "Built Chaptarr"
 msg_info "Creating Service"
 cat <<EOF >/etc/systemd/system/chaptarr.service
 [Unit]
-Description=Chaptarr Daemon
+Description=Chaptarr Service
 After=network.target
 
 [Service]
 Type=simple
 User=root
 WorkingDirectory=/opt/chaptarr
-ExecStart=/usr/bin/dotnet /opt/chaptarr/Chaptarr.Console.dll -nobrowser -data=/var/lib/chaptarr
+ExecStart=/usr/bin/dotnet /opt/chaptarr/Chaptarr.dll -nobrowser -data=/var/lib/chaptarr
 Restart=on-failure
 RestartSec=5
 
