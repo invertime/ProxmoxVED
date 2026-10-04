@@ -20,7 +20,7 @@ $STD apt install -y \
   sqlite3
 msg_ok "Installed Dependencies"
 
-NODE_VERSION="22" setup_node
+NODE_VERSION="22" setup_nodejs
 $STD npm install -g yarn
 
 msg_info "Installing .NET 10 SDK"
